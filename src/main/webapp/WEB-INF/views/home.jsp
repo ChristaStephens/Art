@@ -10,5 +10,16 @@
 <body>
 <h1>Home Page</h1>
 <p>Landing</p>
+<p>
+use this to create buttons for search terms and for how a user will
+pick furniture
+https://source.unsplash.com/
+
+"https://source.unsplash.com/featured/?{KEYWORD},{KEYWORD}
+* Optionally, to specify a size, place it after the base URL.
+
+Search with size
+https://source.unsplash.com/1600x900/?nature,water"
+</p>
 </body>
 </html>
