@@ -21,5 +21,11 @@ https://source.unsplash.com/
 Search with size
 https://source.unsplash.com/1600x900/?nature,water"
 </p>
+
+<form action="/result" method="post">
+
+
+
+</form>
 </body>
 </html>

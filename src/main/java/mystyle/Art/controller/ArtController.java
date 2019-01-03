@@ -11,6 +11,13 @@ public class ArtController {
 	public ModelAndView showHome() {
 		
 		return new ModelAndView("home");
+		
+	}
+	
+	@RequestMapping("/result")
+	public ModelAndView showResult() {
+		
+		return new ModelAndView("result");
 	}
 
 }
