@@ -24,7 +24,16 @@ https://source.unsplash.com/1600x900/?nature,water"
 
 <form action="/result" method="post">
 
-
+<input type="radio" name="coffee"value="Hot Chocolate"> Hot Chocolate<br>
+		 	<input type="radio" name="coffee" value="Chai Latte"> Chai Latte<br>
+			<input type="radio" name="coffee" value="Light Roast"> Light Roast<br>
+			
+			//possible put the "true to fale instead", still need the picture to show next to the button
+			<input type="radio" onclick="javascript:window.location.href='https://source.unsplash.com/1600x900/?nature,water'; return true;" />
+			
+			<div onClick="window.location = 'https://source.unsplash.com/1600x900/?nature,water';">
+    <input type="radio" style="pointer-events:none;"> 
+</div>
 
 </form>
 </body>
