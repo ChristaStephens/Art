@@ -1,0 +1,22 @@
+Art style notes
+
+<p>
+use this to create buttons for search terms and for how a user will
+pick furniture
+https://source.unsplash.com/
+
+"https://source.unsplash.com/featured/?{KEYWORD},{KEYWORD}
+* Optionally, to specify a size, place it after the base URL.
+
+Search with size
+https://source.unsplash.com/1600x900/?nature,water"
+</p>
+
+on click options for pictures to take them to actual picture location
+
+//possible put the "true to fale instead", still need the picture to show next to the button
+			<input type="radio" onclick="javascript:window.location.href='https://source.unsplash.com/1600x900/?nature,water'; return true;" />
+			
+			<div onClick="window.location = 'https://source.unsplash.com/1600x900/?nature,water';">
+    <input type="radio" style="pointer-events:none;"> 
+</div>

@@ -10,35 +10,53 @@
 <body>
 <h1>Home Page</h1>
 <p>Landing</p>
-<p>
-use this to create buttons for search terms and for how a user will
-pick furniture
-https://source.unsplash.com/
-
-"https://source.unsplash.com/featured/?{KEYWORD},{KEYWORD}
-* Optionally, to specify a size, place it after the base URL.
-
-Search with size
-https://source.unsplash.com/1600x900/?nature,water"
-</p>
 
 <form action="/result" method="post">
-
-<input type="radio" name="coffee"value="Hot Chocolate"> Hot Chocolate<br>
-		 	<input type="radio" name="coffee" value="Chai Latte"> Chai Latte<br>
-			<input type="radio" name="coffee" value="Light Roast"> Light Roast<br>
 			
 			<label>
   <input type="radio" name="test" value="small" checked>
-  <img src="https://source.unsplash.com/400x400/?nature,water">
+  <img src="https://source.unsplash.com/300x300/?nature,water">
 </label>
+
+<br></br>
+			<label>
+  <input type="radio" name="test" value="small" checked>
+  <img src="https://source.unsplash.com/300x300/?modern">
+</label>
+		
+		<br></br>	
+						<label>
+  <input type="radio" name="test" value="small" checked>
+  <img src="https://source.unsplash.com/300x300/?africa">
+</label>
+		
+		<br></br>
+		
+				<br></br>	
+						<label>
+  <input type="radio" name="test" value="small" checked>
+  <img src="https://source.unsplash.com/300x300/?wildlife">
+</label>
+		
+		<br></br>
+		
+						<br></br>	
+						<label>
+  <input type="radio" name="test" value="small" checked>
+  <img src="https://source.unsplash.com/300x300/?urban">
+</label>
+		
+		<br></br>
+		
+								<br></br>	
+						<label>
+  <input type="radio" name="test" value="small" checked>
+  <img src="https://source.unsplash.com/300x300/?abstract">
+</label>
+		
+		<br></br>
 			
-			//possible put the "true to fale instead", still need the picture to show next to the button
-			<input type="radio" onclick="javascript:window.location.href='https://source.unsplash.com/1600x900/?nature,water'; return true;" />
 			
-			<div onClick="window.location = 'https://source.unsplash.com/1600x900/?nature,water';">
-    <input type="radio" style="pointer-events:none;"> 
-</div>
 
 </form>
 </body>
