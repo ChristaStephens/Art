@@ -13,28 +13,30 @@
 
 <form action="/result" method="post">
 			
+			<p> want to put "required" for min number of boxes to check</p>
+			
 			<label>
-  <input type="radio" name="test" value="small" checked>
+  <input type="checkbox" name="test" value="small" unchecked>
   <img src="https://source.unsplash.com/300x300/?nature,water">
 </label>
 
 <br></br>
 			<label>
-  <input type="radio" name="test" value="small" checked>
+  <input type="checkbox" name="test" value="small" unchecked>
   <img src="https://source.unsplash.com/300x300/?modern">
 </label>
 		
 		<br></br>	
 						<label>
-  <input type="radio" name="test" value="small" checked>
-  <img src="https://source.unsplash.com/300x300/?africa">
+  <input type="checkbox" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?african">
 </label>
 		
 		<br></br>
 		
 				<br></br>	
 						<label>
-  <input type="radio" name="test" value="small" checked>
+  <input type="checkbox" name="test" value="small" unchecked>
   <img src="https://source.unsplash.com/300x300/?wildlife">
 </label>
 		
@@ -42,7 +44,7 @@
 		
 						<br></br>	
 						<label>
-  <input type="radio" name="test" value="small" checked>
+  <input type="checkbox" name="test" value="small" unchecked>
   <img src="https://source.unsplash.com/300x300/?urban">
 </label>
 		
@@ -50,12 +52,48 @@
 		
 								<br></br>	
 						<label>
-  <input type="radio" name="test" value="small" checked>
+  <input type="checkbox" name="test" value="small" unchecked>
   <img src="https://source.unsplash.com/300x300/?abstract">
 </label>
 		
 		<br></br>
 			
+			
+											<br></br>	
+						<label>
+  <input type="checkbox" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?pop art">
+</label>
+		
+		<br></br>
+		
+								<label>
+  <input type="checkbox" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?landscape">
+</label>
+		
+		<br></br>
+			
+			
+			
+					<br></br>
+		
+								<label>
+  <input type="checkbox" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?space">
+</label>
+		
+		<br></br>
+		
+							<br></br>
+		
+								<label>
+  <input type="checkbox" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?spa">
+</label>
+		
+		<br></br>
+		
 			
 
 </form>
