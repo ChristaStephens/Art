@@ -28,6 +28,11 @@ https://source.unsplash.com/1600x900/?nature,water"
 		 	<input type="radio" name="coffee" value="Chai Latte"> Chai Latte<br>
 			<input type="radio" name="coffee" value="Light Roast"> Light Roast<br>
 			
+			<label>
+  <input type="radio" name="test" value="small" checked>
+  <img src="https://source.unsplash.com/400x400/?nature,water">
+</label>
+			
 			//possible put the "true to fale instead", still need the picture to show next to the button
 			<input type="radio" onclick="javascript:window.location.href='https://source.unsplash.com/1600x900/?nature,water'; return true;" />
 			
