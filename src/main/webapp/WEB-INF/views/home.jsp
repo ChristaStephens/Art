@@ -12,7 +12,8 @@
 <p>Landing</p>
 
 <form action="/result" method="post">
-			
+
+
 			<p> want to put "required" for min number of boxes to check</p>
 			
 			<label>
@@ -94,8 +95,12 @@
 		
 		<br></br>
 		
+		
+		<button type="button" href="/result" onclick="alert('Choices Submitted')">Submit</button>
 			
 
 </form>
+
+<a href ="/result">back to form</a>
 </body>
 </html>

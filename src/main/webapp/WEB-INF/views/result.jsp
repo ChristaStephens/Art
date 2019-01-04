@@ -11,5 +11,7 @@
 <h1>Result Landing</h1>
 
 <p> your style is modern</p>
+
+<a href ="/home">back to home</a>
 </body>
 </html>
