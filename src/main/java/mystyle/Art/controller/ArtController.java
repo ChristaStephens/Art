@@ -9,10 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class ArtController {
 	
 	@RequestMapping("/reg")
-	public ModelAndView showHome( 
-	@RequestParam ("name") String name, 
-	@RequestParam("last") String last,
-	@RequestParam("email") String email){
+	public ModelAndView showHome( @RequestParam (name = "name", required = false) String name, 
+			@RequestParam (name = "last", required = false) String last,
+			@RequestParam (name = "email", required = false) String email){
 		
 		ModelAndView mv = new ModelAndView("reg");
 	mv.addObject("name", name);
