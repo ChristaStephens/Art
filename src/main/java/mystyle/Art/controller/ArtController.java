@@ -38,26 +38,6 @@ public class ArtController {
 	}
 	
 	
-	
-	//mv.addobect means to output to the page!
-//	public ModelAndView showSummary( @RequestParam ("name") String name, 
-//			@RequestParam("last") String last,
-//			@RequestParam("coffee") String coffee,
-//			@RequestParam("bday") String bday,
-//			@RequestParam("email") String email, 
-//			@RequestParam (name ="updates", required= false) String updates, 
-//			@RequestParam (name ="sal", required= false) String sal){
-//		ModelAndView mv = new ModelAndView("summary");
-//		mv.addObject("name", name);
-//		mv.addObject("last", last);
-//		mv.addObject("bday", bday);
-//		mv.addObject("coffee", coffee);
-//		mv.addObject("email", email);
-//		mv.addObject("updates", updates);
-//		mv.addObject("sal", sal);
-//		//for updates to show or not show we need to say "name updates, req false"
-//				//to say that's it's not required to put int a check mark
-//		return mv;
-//	}
+
 
 }

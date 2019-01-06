@@ -77,7 +77,6 @@
 		<br></br>
 			
 			
-			
 					<br></br>
 		
 								<label>
@@ -98,7 +97,6 @@
 		
 		
 		<button type="button" href="/result" onclick="alert('Choices Submitted')">Submit</button>
-		
 		
 			
 

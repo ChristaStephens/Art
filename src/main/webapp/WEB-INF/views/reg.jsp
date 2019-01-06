@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
 <meta charset="ISO-8859-1">
 <title>Registration</title>
 </head>
@@ -47,6 +48,8 @@
 		</p>
 
 	</form>
+	
+	<a href ="/">home</a>
 
 </body>
 </html>
