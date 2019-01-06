@@ -31,7 +31,7 @@ public class ArtController {
 	
 	
 	@RequestMapping("/result")
-	public ModelAndView showResult(@ RequestParam ("result") String result) {
+	public ModelAndView showResult(@RequestParam (name = "result", required = false) String result) {
 		ModelAndView mv = new ModelAndView("result");
 		mv.addObject("result", result);
 		return mv;
