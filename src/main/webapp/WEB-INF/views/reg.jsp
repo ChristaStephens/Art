@@ -10,7 +10,7 @@
 <body>
 <h1>Registration Landing Page</h1>
 
-
+<p> hi ${name } </p>
 
 
 <h1>Here is the landing for User Registration</h1>

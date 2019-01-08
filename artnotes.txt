@@ -9,6 +9,10 @@ minimalistic
 african
 
 what are home decor styles
+1/6/19
+new tags to use for buttons:
+modern home
+indoor plants
 
 <p>
 use this to create buttons for search terms and for how a user will

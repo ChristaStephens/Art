@@ -14,9 +14,10 @@
 
 <form action="/result" method="post">
 
+<p> ${name } </p>
 
 			<p> want to put "required" for min number of boxes to check</p>
-			
+			<!-- for buttons will change to modern v contempary -->
 			<label>
   <input type="checkbox" name="test" value="small" unchecked>
   <img src="https://source.unsplash.com/300x300/?nature,water">
