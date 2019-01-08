@@ -17,7 +17,7 @@
 		<select name="users">
 			<c:forEach var="users" items="${users}">
 
-				<option>${name.users }</option>
+				<option>${users.name }</option>
 
 
 			</c:forEach>

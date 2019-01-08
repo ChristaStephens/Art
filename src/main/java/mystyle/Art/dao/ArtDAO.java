@@ -24,7 +24,7 @@ public class ArtDAO {
 	
 	public List<ArtModel> findByName(String name) {
 
-		return em.createQuery("FROM ArtModel ORDER BY name ASC", ArtModel.class).getResultList();
+		return em.createQuery("FROM ArtModel", ArtModel.class).getResultList();
 	}
 	
 	
