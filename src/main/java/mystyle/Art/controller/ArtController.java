@@ -29,7 +29,8 @@ public class ArtController {
 			@RequestParam (name = "email", required = false) String email){
 		
 		ModelAndView mv = new ModelAndView("reg");
-//		List <ArtModel> users = artDAO.findByName(last);
+		mv.addObject("users", artDAO.findByName(name));
+//		List <ArtModel> users = artDAO.findAll();
 	mv.addObject("name", name);
 	mv.addObject("last", last);
 	mv.addObject("email", email);

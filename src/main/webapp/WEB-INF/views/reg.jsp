@@ -11,7 +11,23 @@
 <body>
 <h1>Registration Landing Page</h1>
 
-<p> hi ${name} </p>
+<!-- This is getting the dummy information to show up -->
+	<form action="/result">
+
+		<select name="users">
+			<c:forEach var="users" items="${users}">
+
+				<option>${name.users }</option>
+
+
+			</c:forEach>
+		</select> <input type="submit">
+
+
+	</form>
+
+<!-- this also gets the data to pop up -->
+<p> hi ${name.users} </p>
 
 
 <h1>Here is the landing for User Registration</h1>
@@ -24,7 +40,7 @@
 
 	<form action="/result" method="post">
 
-		<!-- Mr. Ms. Doctor Miss change our the below radio buttons between the p tags -->
+		
 
 
 		<p>

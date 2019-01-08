@@ -9,7 +9,6 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import brainpower.scientist.model.Scientist;
 import mystyle.Art.model.ArtModel;
 
 
@@ -35,7 +34,7 @@ public class ArtDAO {
 	
 	public List<ArtModel> findAll() {
 
-		return em.createQuery("FROM ArtModel ORDER BY name ASC", ArtModel.class).getResultList();
+		return em.createQuery("FROM ArtModel", ArtModel.class).getResultList();
 	}
 
 }
