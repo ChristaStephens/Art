@@ -22,3 +22,31 @@ h1 {
 	font-size: 32px;
 	text-align: center;
 }
+
+/* not sure if this stuff below works */
+
+img {
+  width: 20vw;
+  height: 20vw;
+  padding: 2vw;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+img:hover {
+  opacity:0.6;
+  cursor: pointer;
+}
+
+img:active {
+  opacity:0.4;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label > img {
+  border: 20px solid rgb(228, 207, 94);
+}
+
+

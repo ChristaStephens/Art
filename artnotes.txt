@@ -13,6 +13,20 @@ what are home decor styles
 new tags to use for buttons:
 modern home
 indoor plants
+color home
+neutral colors
+
+
+what i had as check boxes  1/8/19
+nature,water
+modern
+wildlife african
+urban
+abstract
+pop art
+landscape
+space spa
+
 
 <p>
 use this to create buttons for search terms and for how a user will
