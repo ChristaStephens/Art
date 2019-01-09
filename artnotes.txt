@@ -27,6 +27,9 @@ pop art
 landscape
 space spa
 
+https://stackoverflow.com/questions/30663562/use-images-like-checkboxes
+for the type of check boxes I want
+
 
 <p>
 use this to create buttons for search terms and for how a user will
