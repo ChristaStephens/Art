@@ -21,9 +21,24 @@
 <!-- this works to allow for only one boxed to get check w/ js below. -->
 <!-- need to combine with info on buttons that I have now (labels) -->
 
-<input type="checkbox" name="skill" class="check" value="male"> Male
-<input type="checkbox" name="skill" class="check" value="female"> Female
-<input type="checkbox" name="skill" class="check" value="other"> Other
+
+<p>test below</p>
+
+
+<ul>
+  <li><input type="checkbox" class ="check" id="cb1" />
+    <label for="cb1"><img src="http://lorempixel.com/100/100" /></label>
+  </li>
+  <li><input type="checkbox" class ="check" id="cb2" />
+    <label for="cb2"><img src="http://lorempixel.com/101/101" /></label>
+  </li>
+  <li><input type="checkbox" class ="check" id="cb3" />
+    <label for="cb3"><img src="http://lorempixel.com/102/102" /></label>
+  </li>
+  <li><input type="checkbox" class ="check" id="cb4" />
+    <label for="cb4"><img src="http://lorempixel.com/103/103" /></label>
+  </li>
+</ul>
 
 <script>
 $(document).ready(function(){
@@ -32,6 +47,8 @@ $(document).ready(function(){
     });
 });
 </script>
+
+
 
 
 			<p> want to put "required" for min number of boxes to check</p>
