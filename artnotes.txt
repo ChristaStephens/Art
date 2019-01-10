@@ -51,3 +51,12 @@ on click options for pictures to take them to actual picture location
 			<div onClick="window.location = 'https://source.unsplash.com/1600x900/?nature,water';">
     <input type="radio" style="pointer-events:none;"> 
 </div>
+
+
+working list of buttons below, just extra 1/10/19
+
+ <input type="checkbox" class ="check" id="cb3" />
+    <label for="cb3"><img src="http://lorempixel.com/102/102" /></label>
+  
+  <input type="checkbox" class ="check" id="cb4" />
+    <label for="cb4"><img src="http://lorempixel.com/103/103" /></label>

@@ -35,12 +35,6 @@
     
     <!-- name each set by cat 1, 2, 3 -8 so that I can pull data based on click? -->
   
-  <input type="checkbox" class ="check" id="cb3" />
-    <label for="cb3"><img src="http://lorempixel.com/102/102" /></label>
-  
-  <input type="checkbox" class ="check" id="cb4" />
-    <label for="cb4"><img src="http://lorempixel.com/103/103" /></label>
-  
 </ul>
 
 <script>
@@ -56,32 +50,8 @@ $(document).ready(function(){
 			<!-- for buttons will change to modern v contempary -->
 			<label>
 
-<br></br>
-
-			<label for="choose-1">
-  <input type="checkbox" id="choose-1" name="test" value="small" unchecked>
-  <img src="https://source.unsplash.com/300x300/?modern">
-</label>
-		
-		<br></br>	
-						<label for="choose-2">
-  <input type="checkbox" id="choose-2" name="test" value="small" unchecked>
-  <img src="https://source.unsplash.com/300x300/?african">
-</label>
-		
-		<br></br>
-		
-				
-		<br></br>
-		
-		
-		<button type="button" href="/result" onclick="alert('Choices Submitted')">Submit</button>
-		
-		
-		
-			
-
 </form>
+		<button type="button" href="/result" onclick="alert('Choices Submitted')">Submit</button>
 
 <a href ="/result">back to form</a>
 </body>
