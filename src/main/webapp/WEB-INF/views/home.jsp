@@ -14,6 +14,7 @@
 <h1>Home Page</h1>
 <p>Landing</p>
 
+<h2>Choose an image: Left or right?</h2>
 <form action="/result" method="post">
 
 <p> ${users.name } </p>
