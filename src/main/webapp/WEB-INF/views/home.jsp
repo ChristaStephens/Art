@@ -23,7 +23,7 @@
 <!-- need to combine with info on buttons that I have now (labels) -->
 
 
-<p>name attribute is what gets used for the param in the controller</p>
+<!-- name attribute is what gets used for the param in the controller -->
 
 
 <ul>
