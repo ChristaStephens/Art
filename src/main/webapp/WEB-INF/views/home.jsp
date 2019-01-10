@@ -20,14 +20,15 @@
 
 <!-- this works to allow for only one boxed to get check w/ js below. -->
 <!-- need to combine with info on buttons that I have now (labels) -->
-<input type="checkbox" name="skill" value="male"> Male
-<input type="checkbox" name="skill" value="female"> Female
-<input type="checkbox" name="skill" value="other"> Other
+
+<input type="checkbox" name="skill" class="check" value="male"> Male
+<input type="checkbox" name="skill" class="check" value="female"> Female
+<input type="checkbox" name="skill" class="check" value="other"> Other
 
 <script>
 $(document).ready(function(){
-    $('input:checkbox').click(function() {
-        $('input:checkbox').not(this).prop('checked', false);
+    $('.check').click(function() {
+        $('.check').not(this).prop('checked', false);
     });
 });
 </script>
