@@ -26,12 +26,14 @@ public class ArtController {
 	@RequestMapping("/reg")
 	public ModelAndView showHome( @RequestParam (name = "name", required = false) String name, 
 			@RequestParam (name = "last", required = false) String last,
-			@RequestParam (name = "email", required = false) String email){
+			@RequestParam (name = "email", required = false) String email,
+			@RequestParam (name = "cat1", required = false) String cat1){
 		
 		ModelAndView mv = new ModelAndView("reg");
 		//need find all to find all the users!
 		mv.addObject("users", artDAO.findAll());
 //		List <ArtModel> users = artDAO.findAll();
+	mv.addObject("cat1", cat1);
 	mv.addObject("name", name);
 	mv.addObject("last", last);
 	mv.addObject("email", email);
