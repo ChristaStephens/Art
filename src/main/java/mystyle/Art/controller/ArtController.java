@@ -23,6 +23,8 @@ public class ArtController {
 	//need to create a dao of the users name to show on the home page
 	//(page with pictues to say (hi "tom" choose these pictures below
 	//the below params help communicating between the jsp, dao and controller
+	
+	//contains user registration 
 	@RequestMapping("/")
 	public ModelAndView showHome( @RequestParam (name = "name", required = false) String name, 
 			@RequestParam (name = "last", required = false) String last,
@@ -42,7 +44,7 @@ public class ArtController {
 	}
 	
 	
-	
+	//where the user picks the art choices
 	@RequestMapping("/art")
 	public ModelAndView showHome() {
 	ModelAndView mv = new ModelAndView ("art");
@@ -52,6 +54,8 @@ public class ArtController {
 	//need to create a dao of the users choices then the expression 
 	//language can be used to output the users information onto the 
 	//jsp
+	
+	//where the user will see the end result of the choices
 	@RequestMapping("/result")
 	public ModelAndView showResult(@RequestParam (name = "result", required = false) String result) {
 		ModelAndView mv = new ModelAndView("result");
@@ -59,7 +63,5 @@ public class ArtController {
 		return mv;
 	}
 	
-	
-
 
 }
