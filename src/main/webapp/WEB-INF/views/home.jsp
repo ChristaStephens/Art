@@ -1,59 +1,73 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-    
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta charset="ISO-8859-1">
-<title>Home</title>
+<title>Registration</title>
 </head>
 <body>
-<h1>Home Page</h1>
-<p>Landing</p>
+<h1>Registration Landing Page</h1>
 
-<h2>Choose an image: Left or right?</h2>
-<form action="/result" method="post">
+<!-- This is getting the dummy information to show up -->
+	<form action="/result">
 
-<p> ${users.name } </p>
+		<select name="users">
+			<c:forEach var="users" items="${users}">
 
-<!-- this works to allow for only one boxed to get check w/ js below. -->
-<!-- need to combine with info on buttons that I have now (labels) -->
-
-
-<!-- name attribute is what gets used for the param in the controller -->
+				<option>${users.name }</option>
 
 
-<ul>
-
-  <input type="checkbox" name= "cat1" class ="check" id="cb1" />
-    <label for="cb1"><img src="https://source.unsplash.com/300x300/?modern" /></label>
-  
-  <input type="checkbox" name= "cat1" class ="check" id="cb2" />
-    <label for="cb2"><img src="https://source.unsplash.com/300x300/?african" /></label>
-    
-    <!-- name each set by cat 1, 2, 3 -8 so that I can pull data based on click? -->
-  
-</ul>
-
-<script>
-$(document).ready(function(){
-    $('.check').click(function() {
-        $('.check').not(this).prop('checked', false);
-    });
-});
-</script>
+			</c:forEach>
+		</select> <input type="submit">
 
 
-			<p> want to put "required" for min number of boxes to check</p>
-			<!-- for buttons will change to modern v contempary -->
-			<label>
+	</form>
 
-</form>
-		<button type="button" href="/result" onclick="alert('Choices Submitted')">Submit</button>
+<!-- this also gets the data to pop up -->
+<p> hi ${name.users} </p>
 
-<a href ="/result">back to form</a>
+
+<h1>Here is the landing for User Registration</h1>
+
+	<p>Please fill out the form below for our yearly free birthday
+		coffee:</p>
+
+	<!-- action is where the page takes us, usually the final page -->
+
+
+	<form action="/result" method="post">
+
+		
+
+
+		<p>
+			Enter your first name: <br> <input name="name" pattern="[a-zA-Z]*" />
+		</p>
+
+			Enter your last name: <br> <input name="last" pattern="[a-zA-Z]*" />
+		
+
+
+		<p>
+			Enter your email to receive a coupon for your free birthday drink: <br>
+			<input type="email" name="email">
+		</p>
+
+			<p>
+			<button>Submit</button>
+			
+			
+			<button type="submit" class="btn btn-primary" href="/submit">Add</button>
+		<a class="btn link" href="/result">Cancel</a>
+		</p>
+
+	</form>
+	
+	<a href ="/">home</a>
+
 </body>
 </html>

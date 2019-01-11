@@ -23,13 +23,13 @@ public class ArtController {
 	//need to create a dao of the users name to show on the home page
 	//(page with pictues to say (hi "tom" choose these pictures below
 	//the below params help communicating between the jsp, dao and controller
-	@RequestMapping("/reg")
+	@RequestMapping("/")
 	public ModelAndView showHome( @RequestParam (name = "name", required = false) String name, 
 			@RequestParam (name = "last", required = false) String last,
 			@RequestParam (name = "email", required = false) String email,
 			@RequestParam (name = "cat1", required = false) String cat1){
 		
-		ModelAndView mv = new ModelAndView("reg");
+		ModelAndView mv = new ModelAndView("home");
 		//need find all to find all the users!
 		mv.addObject("users", artDAO.findAll());
 //		List <ArtModel> users = artDAO.findAll();
@@ -43,9 +43,9 @@ public class ArtController {
 	
 	
 	
-	@RequestMapping("/")
+	@RequestMapping("/art")
 	public ModelAndView showHome() {
-	ModelAndView mv = new ModelAndView ("home");
+	ModelAndView mv = new ModelAndView ("art");
 	return mv;
 	}
 	
