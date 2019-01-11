@@ -28,7 +28,7 @@
 	</form>
 
 <!-- this also gets the data to pop up -->
-<p> hi ${name.users} </p>
+<!-- <p> hi ${name.users} </p> -->
 
 
 <h1>Here is the landing for User Registration</h1>
@@ -36,12 +36,10 @@
 	<p>Please fill out the form below for our yearly free birthday
 		coffee:</p>
 
-	<!-- action is where the page takes us, usually the final page -->
+	<!-- form action is where the page takes us, usually the final page -->
 
 
-	<form action="/result" method="post">
-
-		
+	<form action="/home" method="post">
 
 
 		<p>
@@ -49,7 +47,6 @@
 		</p>
 
 			Enter your last name: <br> <input name="last" pattern="[a-zA-Z]*" />
-		
 
 
 		<p>
