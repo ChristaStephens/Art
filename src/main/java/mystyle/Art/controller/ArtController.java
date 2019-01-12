@@ -26,19 +26,26 @@ public class ArtController {
 	
 	//contains user registration 
 	@RequestMapping("/")
-	public ModelAndView showHome( @RequestParam (name = "name", required = false) String name, 
+	public ModelAndView showHome(ArtDAO newUsers, @RequestParam 
+			(name = "name", required = false) String name, 
 			@RequestParam (name = "last", required = false) String last,
 			@RequestParam (name = "email", required = false) String email,
 			@RequestParam (name = "cat1", required = false) String cat1){
 		
 		ModelAndView mv = new ModelAndView("home");
-		//need find all to find all the users!
+		// need find all to find all the users!
 		mv.addObject("users", artDAO.findAll());
 //		List <ArtModel> users = artDAO.findAll();
-	mv.addObject("cat1", cat1);
-	mv.addObject("name", name);
-	mv.addObject("last", last);
-	mv.addObject("email", email);
+		mv.addObject("cat1", cat1);
+		mv.addObject("name", name);
+		mv.addObject("last", last);
+		mv.addObject("email", email);
+		
+		
+		//may need to take this out and the art dao at the top of the in the mapping.
+//		artDAO.create(newUsers);
+//		mv.addObject("newUser", newUsers);
+	
 	
 		return mv;	
 	}
@@ -57,7 +64,8 @@ public class ArtController {
 	
 	//where the user will see the end result of the choices
 	@RequestMapping("/result")
-	public ModelAndView showResult(@RequestParam (name = "result", required = false) String result) {
+	public ModelAndView showResult(@RequestParam 
+		(name = "result", required = false) String result) {
 		ModelAndView mv = new ModelAndView("result");
 		mv.addObject("result", result);
 		return mv;

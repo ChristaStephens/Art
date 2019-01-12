@@ -36,5 +36,11 @@ public class ArtDAO {
 
 		return em.createQuery("FROM ArtModel", ArtModel.class).getResultList();
 	}
+	
+	//may need to take this out of change this
+	//to create a new user in the database
+	public void create(ArtDAO newUsers) {
+		em.persist(newUsers);
+	}
 
 }
