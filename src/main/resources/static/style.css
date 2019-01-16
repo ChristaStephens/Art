@@ -29,10 +29,12 @@ img {
   width: 20vw;
   height: 20vw;
   padding: 2vw;
+  
 }
 
 input[type=checkbox] {
   display: none;
+    border: 20px solid rgba(204, 0, 153, 0.5);
 }
 
 img:hover {
@@ -46,7 +48,7 @@ img:active {
 }
 
 input[type=checkbox]:checked + label > img {
-  border: 20px solid rgb(228, 207, 94);
+  border: 20px solid rgba(204, 0, 153, 0.5);
 }
 
 

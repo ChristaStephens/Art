@@ -60,3 +60,25 @@ working list of buttons below, just extra 1/10/19
   
   <input type="checkbox" class ="check" id="cb4" />
     <label for="cb4"><img src="http://lorempixel.com/103/103" /></label>
+
+
+original buttons below 1/10/19
+
+<br></br>
+
+			<label for="choose-1">
+  <input type="checkbox" id="choose-1" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?modern">
+</label>
+		
+		<br></br>	
+						<label for="choose-2">
+  <input type="checkbox" id="choose-2" name="test" value="small" unchecked>
+  <img src="https://source.unsplash.com/300x300/?african">
+</label>
+		
+		<br></br>
+		
+				
+		<br></br>
+		
